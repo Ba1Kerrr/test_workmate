@@ -77,7 +77,7 @@ def generate_report(data, report_type):
         payout = calculate_payout(data)
         # Группируем участников по сфере деятельности
         departments = {}
-        print(f"{' ' * 14}{'Имя':<20}{'Часы работы':<15}{'Оценка':<10}{'Заработок':<10}")
+        print(f"{' ' * 14}{'name':<20}{'hours':<15}{'rate':<10}{'payout':<10}")
         for row in data:
             department = row['department']
             if department not in departments:
